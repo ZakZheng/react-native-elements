@@ -19,6 +19,7 @@ const Badge = props => {
   } = props;
 
   const element = renderNode(Text, value, {
+    allowFontScaling:false,
     style: StyleSheet.flatten([styles.text, textStyle && textStyle]),
   });
 
